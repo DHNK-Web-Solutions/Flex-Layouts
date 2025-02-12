@@ -1,0 +1,9 @@
+.container {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.container > .items {
+  padding: 10px;
+  border: 1px solid;
+}

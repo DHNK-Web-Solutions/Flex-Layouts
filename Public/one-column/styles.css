@@ -1,0 +1,53 @@
+.box {
+  display: flex;
+  margin: 20px 50px;
+  border: 1px solid black;
+  height: 80vh;
+  border-radius: 5px;
+}
+h1 {
+  text-align: center;
+}
+.box div {
+  flex-grow: 1;
+  border: 1px solid;
+  margin: 20px;
+  background-color: brown;
+}
+@media (max-width: 320px) {
+  .box {
+    margin: 10px auto;
+    height: 60vh;
+  }
+  .box div {
+    margin: 10px;
+  }
+  h1 {
+    font-size: 1.5rem;
+  }
+}
+@media (min-width: 321px) and (max-width: 375px) {
+  .box {
+    margin: 15px 20px;
+  }
+  h1 {
+    font-size: 1.8rem;
+  }
+}
+@media (min-width: 376px) and (max-width: 425px) {
+  .box {
+    margin: 15px 30px;
+  }
+}
+@media (min-width: 426px) and (max-width: 768px) {
+  .box {
+    margin: 15px auto;
+    width: 400px;
+  }
+}
+@media (min-width: 769px) {
+  .box {
+    margin: 20px auto;
+    width: 600px;
+  }
+}
